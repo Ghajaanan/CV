@@ -1,0 +1,51 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "C:\\Users\\ghaja\\Documents\\Imperial\\EE3\\HLP\\hlp2020-8\\ga4017\\ga4017.fsproj",
+    "projectName": "ga4017",
+    "projectPath": "C:\\Users\\ghaja\\Documents\\Imperial\\EE3\\HLP\\hlp2020-8\\ga4017\\ga4017.fsproj",
+    "outputPath": "C:\\Users\\ghaja\\Documents\\Imperial\\EE3\\HLP\\hlp2020-8\\ga4017\\obj\\",
+    "projectStyle": "PackageReference",
+    "originalTargetFrameworks": [
+      "netcoreapp3.1"
+    ],
+    "sources": {
+      "https://api.nuget.org/v3/index.json": {}
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "projectReferences": {}
+      }
+    }
+  },
+  "frameworks": {
+    "netcoreapp3.1": {
+      "dependencies": {
+        "Expecto.FsCheck": {
+          "target": "Package",
+          "version": "[8.13.1, )"
+        },
+        "FSharp.Core": {
+          "target": "Package",
+          "version": "[4.7.0, )"
+        }
+      },
+      "imports": [
+        "net461",
+        "net462",
+        "net47",
+        "net471",
+        "net472",
+        "net48"
+      ],
+      "assetTargetFallback": true,
+      "warn": true,
+      "frameworkReferences": {
+        "Microsoft.NETCore.App": {
+          "privateAssets": "all"
+        }
+      },
+      "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+    }
+  }
+}

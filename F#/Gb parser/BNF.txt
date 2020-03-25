@@ -1,0 +1,31 @@
+<var> ::= // symbol starting with letter and not a keyword. NB used for all names.
+<var-list> ::= <var> | <var> <var-list>
+<int> ::= decimal integer literal
+<bool> ::= bool
+<bin-op> ::// a binary operator
+<unary-op> ::// a unary operator
+<bra-exp> ::= "(" exp ")"
+<item-exp> ::= <var> | <int> | <bool> | <bra-exp> | <bin-opn> | <defn-exp> | <if-exp> | <lambda-exp>
+<bin-exp> ::= <var> | <int> | <bool> | <bra-exp> | <defn-exp> | <if-exp> | <lambda-exp>
+<binary-opn> ::= <bin-exp> <bin-op> <bin-exp>
+<unary-opn> ::= <unary-op> <item-exp>
+<app-exp-list> ::= <item-exp> | <item-exp> <app-exp-list>
+<defn-exp> ::= 	 "let" <var-list> "be" TOPENSCOPE <exp> TCLOSECOPE <exp>				<--- indenting
+		|"let" <var-list> "be" <exp> ";" <exp>							<--- in-line
+<if-exp> ::=     "if" <exp> "then" TOPENSCOPE <exp> TCLOSECOPE "else" TOPENSCOPE <exp> TCLOSECOPE	<--- indenting
+		|"if" <exp> "then" <exp> "else" <exp> 							<--- in-line	
+<lamb> ::= 	 "lamb" <var-list> "->" TOPENSCOPE   <exp> TCLOSECOPE 					<--- indenting
+		|"lamb" <var-list> "->" <exp> ";"							<--- in-line
+<exp> ::= <app-exp-list>
+
+
+
+
+
+
+
+
+
+
+
+//print "The car's on fire and there's no driver at the wheel. The sewers are all muddied with a thousand lonely suicides... and a dark wind blows. The government is corrupt. And we're on so many drugs with the radio on and the curtains drawn. We're trapped in the belly of this horrible machine, and the machine is bleeding to death. The sun has fallen down and the billboards are all leering and the flags are all dead at the top of their poles."
